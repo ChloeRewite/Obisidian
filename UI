@@ -203,7 +203,7 @@ local Library = {
     Scheme = {
         BackgroundColor = Color3.fromRGB(15, 15, 15),
         MainColor = Color3.fromRGB(25, 25, 25),
-        AccentColor = Color3.fromRGB(125, 85, 255),
+        AccentColor = Color3.fromRGB(102, 204, 255),
         OutlineColor = Color3.fromRGB(40, 40, 40),
         FontColor = Color3.new(1, 1, 1),
         Font = Font.fromEnum(Enum.Font.Code),
@@ -3595,7 +3595,8 @@ do
                 Text = string.upper(Text),
                 TextSize = 13,
                 FontFace = BoldFont,
-                TextTransparency = AccentColor and 0 or 0.35,
+                TextTransparency = 0,
+                TextColor3 = Color3.fromRGB(0, 170, 255),
                 TextXAlignment = Enum.TextXAlignment.Center,
                 Parent = InnerHolder,
             })
@@ -3616,7 +3617,7 @@ do
             
             local LeftLine = New("Frame", {
                 AnchorPoint = Vector2.new(0, 0.5),
-                BackgroundColor3 = AccentColor and Library.Scheme.AccentColor or "MainColor",
+                BackgroundColor3 = Color3.fromRGB(0, 170, 255),
                 BackgroundTransparency = AccentColor and 0.7 or 0,
                 BorderColor3 = AccentColor and Library.Scheme.AccentColor or "OutlineColor",
                 BorderSizePixel = AccentColor and 0 or 1,
@@ -3631,7 +3632,7 @@ do
             
             local RightLine = New("Frame", {
                 AnchorPoint = Vector2.new(1, 0.5),
-                BackgroundColor3 = AccentColor and Library.Scheme.AccentColor or "MainColor",
+                BackgroundColor3 = Color3.fromRGB(0, 170, 255),
                 BackgroundTransparency = AccentColor and 0.7 or 0,
                 BorderColor3 = AccentColor and Library.Scheme.AccentColor or "OutlineColor",
                 BorderSizePixel = AccentColor and 0 or 1,
@@ -3645,7 +3646,7 @@ do
         else
             New("Frame", {
                 AnchorPoint = Vector2.new(0, 0.5),
-                BackgroundColor3 = "MainColor",
+                BackgroundColor3 = Color3.fromRGB(0, 170, 255),
                 BorderColor3 = "OutlineColor",
                 BorderSizePixel = 1,
                 Position = UDim2.fromScale(0, 0.5),
@@ -7172,7 +7173,7 @@ function Library:CreateWindow(WindowInfo)
         Library:AddOutline(MainFrame)
 
         
-        local NeonColor = Color3.fromRGB(255, 160, 182)
+        local NeonColor = Color3.fromRGB(0, 170, 255)
         local GlowLayers = {
             { Thickness = 1,   Transparency = 0.15 },
             { Thickness = 1.5, Transparency = 0.4 },
@@ -9539,7 +9540,7 @@ function Library:CreateWindow(WindowInfo)
     end
 
 do
-        local ToggleBtnTexture = "rbxassetid://72530843154458"
+        local ToggleBtnTexture = "rbxassetid://132435516080103"
         
         local ToggleBtnSize = 56   
         local ToggleBtnIconSize = 45
