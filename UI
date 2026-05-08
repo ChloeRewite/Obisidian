@@ -9540,7 +9540,7 @@ function Library:CreateWindow(WindowInfo)
     end
 
 do
-        local ToggleBtnTexture = "rbxassetid://132435516080103"
+        local ToggleBtnTexture = "rbxassetid://106807204955424"
         
         local ToggleBtnSize = 56   
         local ToggleBtnIconSize = 45
