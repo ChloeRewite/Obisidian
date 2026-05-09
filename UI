@@ -9540,10 +9540,10 @@ function Library:CreateWindow(WindowInfo)
     end
 
 do
-        local ToggleBtnTexture = "rbxassetid://106807204955424"
+        local ToggleBtnTexture = "rbxassetid://90794994634293"
         
-        local ToggleBtnSize = 56   
-        local ToggleBtnIconSize = 45
+        local ToggleBtnSize = 40   
+        local ToggleBtnIconSize = 35
 
         local ToggleBtnFrame = New("ImageButton", {
             AnchorPoint = Vector2.new(0.5, 0),
